@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap');
+body {
+    background-color: #EDE9E1;
+    margin: 0;
+    font-family: "Alegreya SC", serif;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+/* Header */
+header {
+    background-color: #B29A7B;
+    padding: 20px;
+    position: relative; 
+}
+
+.header-content {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.logo {
+    text-align: center; 
+}
+
+.contact-info {
+    position: absolute; 
+    right: 20px; 
+    top: 20px; 
+    text-align: right; 
+}
+
+.logo h1 {
+    color: #000000;
+    font-size: 7vh;
+    text-decoration: underline;
+    margin: auto;
+    text-underline-offset: 1.5vh;
+    font-weight:300;
+    text-decoration-thickness: 0.4vh;
+}
+
+.logo p {
+    color: #000000;
+    font-size:24px;
+    text-decoration: underline;
+    margin: 1vh;
+    text-underline-offset: 0.4vh;
+}
+.contact-info p {
+    color: #ffffff;
+    margin: -1vh;
+    text-decoration: underline;
+    text-decoration-color: rgb(233, 226, 214);
+    font-size: 2.5vh;
+    text-underline-offset: 0.5vh;
+}
+span{
+    color: #000000;
+}
+#headerFlower{
+    position: absolute;
+    top: 0;
+    left: 0vh;
+    width: 30vh;
+}
+
+/* Картинка с надписью */
+.wrapper {
+    margin-top: 10vh;
+    display: flex;
+    gap: 5vh;
+    align-items: center;
+    justify-content: center;
+}
+.about-image img {
+    border-radius: 3vh;
+    max-height: 50vh;
+    object-fit: cover;
+    width: 50vh;
+}
+
+.about-section {
+    position: relative;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    border: 3px solid #B29A7B;
+    max-width: 55vh;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+    font-size: 2vh;
+    color: #000000;
+    text-align: justify;
+    padding: 10px;
+}
+
+.about-section::before {
+    content: "О нас";
+    position: absolute;
+    top: -15px;
+    left: 15px;
+    background: #B29A7B;
+    color: #000;
+    padding: 5px 15px;
+    font-weight: bold;
+    border-radius: 10px 10px 0 0;
+    font-size: 2.2vh;
+}
+/* Main */
+main {
+    text-align: center;
+    margin: 20px 0;
+}
+.about-text h2 {
+        padding: 15px;
+        
+    }
+.catalog-title {
+    margin-left: 10vh; 
+    text-align: left;
+    font-size: 16px;
+    text-decoration: underline;
+    text-underline-offset: 0.2vh;
+}
+.catalog {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    margin: 20px 0;
+}
+
+.catalog-item {
+    margin: 10px;
+    flex: 1 1 30%; 
+    max-width: 38vh; 
+}
+
+.catalog-image {
+    max-width: 100%; 
+    height: auto; 
+}
+.catalog-item p {
+    margin-top: 0vh;
+}
+
+.catalog-image {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+    border: 20px solid #B29A7B;
+}
+
+.about-section {
+    display: flex;
+    align-items: center; 
+    margin: 20px 0;
+}
+
+.about-image {
+    margin-right: 20px; 
+}
+
+footer {
+    margin: 0 auto;
+    width: 65%;
+    background-color: #B29A7B;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 2vh;
+    margin-top:auto;
+}
+
+.footer-logo {
+    font-size: 4vh;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    margin-bottom: 5px;
+}
+
+.footer-copyright {
+    font-size: 1.8vh;
+}
+.footer-left{
+    margin: 0;
+    align-items: center;
+}
+
+.footer-contact {
+    text-align: right;
+    font-size: 1.8vh;
+    color: #ffffff;
+    line-height: 1.5;
+    margin: -1vh;
+    text-decoration: underline;
+    text-decoration-color: rgb(233, 226, 214);
+    text-underline-offset: 0.5vh;
+}
+
+
+.footer-contact span {
+    font-weight: bold;
+    color: black;
+}
+
+.footer-contact hr {
+    border: none;
+    border-top: 1px solid #eee7de;
+    margin: 5px 0;
+    width: 100%;
+}
+.footer-flower {
+    position: absolute;
+    right: 10vh;
+    bottom: -48vh;
+    width: 13vh; /* Размер изображения */
+    z-index: 2; /* Чтобы не перекрывал футер */
+}

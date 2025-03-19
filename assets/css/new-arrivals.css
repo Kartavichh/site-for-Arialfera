@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap');
+body {
+    background-color: #EDE9E1;
+    margin: 0;
+    font-family: "Alegreya SC", serif;
+}
+
+header {
+    background-color: #B29A7B;
+    padding: 20px;
+    position: relative; 
+}
+
+.header-content {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.logo {
+    text-align: center; 
+}
+
+.contact-info {
+    position: absolute; 
+    right: 20px; 
+    top: 20px; 
+    text-align: right; 
+}
+
+.logo h1 {
+    color: #ffffff;
+    font-size: 48px; 
+}
+
+.logo p {
+    color: #ffffff;
+}
+
+
+main {
+    padding: 20px; 
+}
+
+.breadcrumb {
+    font-size: 14px; 
+    color: #555; 
+}
+
+.catalog-title {
+    font-size: 24px; 
+    margin-bottom: 20px; 
+}
+
+/* Стили для каталога */
+.catalog {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px; 
+    margin: 20px; 
+}
+
+.catalog-item {
+    text-align: center; 
+}
+
+.catalog-image {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 5px;
+}
+
+
+footer {
+    padding: 10px 20px; 
+    background-color: #B29A7B;
+}
+
+.footer-content {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    width: 100%; 
+}
+
+.footer-logo {
+    margin: 0; 
+}
+
+.footer-address {
+    margin: 0; 
+}
