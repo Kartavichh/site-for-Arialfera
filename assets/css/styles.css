@@ -216,10 +216,15 @@ footer {
     margin: 5px 0;
     width: 100%;
 }
+.footer-wrapper {
+    position: relative;
+}
+
 .footer-flower {
     position: absolute;
     right: 10vh;
-    bottom: -48vh;
-    width: 13vh; /* Размер изображения */
-    z-index: 2; /* Чтобы не перекрывал футер */
+    bottom: 0;
+    width: 15vh; /* Можно увеличить/уменьшить при необходимости */
+    transform: translate(30%, 0%); /* Точная подгонка к футеру */
+    z-index: 2;
 }
