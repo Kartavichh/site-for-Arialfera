@@ -2,7 +2,6 @@
 body {
     font-family: "Alegreya SC", serif;
     margin: 0;
-    padding: 0;
     background-color: #cdc89d;; /* Цвет фона */
 }
 
@@ -30,21 +29,41 @@ header {
 }
 
 .logo h1 {
-    color: #ffffff;
-    font-size: 48px; 
+    color: #000000;
+    font-size: 7vh;
+    text-decoration: underline;
+    margin: auto;
+    text-underline-offset: 1.5vh;
+    font-weight:300;
+    text-decoration-thickness: 0.4vh;
 }
 
 .logo p {
+    color: #000000;
+    font-size:24px;
+    text-decoration: underline;
+    margin: 1vh;
+    text-underline-offset: 0.4vh;
+}
+.contact-info p {
     color: #ffffff;
+    margin: -1vh;
+    text-decoration: underline;
+    text-decoration-color: rgb(233, 226, 214);
+    font-size: 2.5vh;
+    text-underline-offset: 0.5vh;
+}
+span{
+    color: #000000;
 }
 
 
 .grid-container {
     display: grid; /* Используем grid layout */
     grid-template-columns: 1fr 1fr; /* Две колонки равной ширины */
-    gap: 20px; /* Отступ между колонками */
+    gap: 20vh; /* Отступ между колонками */
     padding: 20px; /* Внутренние отступы контейнера */
-    max-width: 1200px; /* Максимальная ширина контейнера */
+    max-width: fit-content; /* Максимальная ширина контейнера */
     margin: 0 auto; /* Центрируем контейнер на странице */
 }
 
@@ -53,33 +72,109 @@ header {
     justify-content: center; /* Центрируем изображение по горизонтали */
     align-items: center; /* Центрируем изображение по вертикали */
 }
-
+#border{
+    margin: auto;
+    border: 2vh solid #B29A7B;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 4vh;
+}
 .text-container {
-    background-color: white; /* Цвет фона текстового блока */
-    padding: 20px; /* Внутренние отступы */
-    border-radius: 8px; /* Скругление углов */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для блока */
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px; /* Внешнее закругление */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 50vh;
+    max-height: fit-content;
 }
-
-
 footer {
-    padding: 10px 20px; 
+    margin: 0 0;
+    width: 65%;
     background-color: #B29A7B;
-}
-
-.footer-content {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    max-width: 1200px; 
-    margin: 0 auto; 
-    width: 100%; 
+    padding: 20px;
+    display: grid;
+    font-size: 2vh;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    transform: translate(30%, 0%);
 }
 
 .footer-logo {
-    margin: 0; 
+    font-size: 4vh;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    margin-bottom: 5px;
 }
 
-.footer-address {
-    margin: 0; 
+.footer-copyright {
+    font-size: 1.8vh;
+}
+.footer-left{
+    margin: 0;
+    align-items: center;
+}
+
+.footer-contact {
+    text-align: right;
+    font-size: 1.8vh;
+    color: #ffffff;
+    line-height: 1.5;
+    margin: -1vh;
+    text-decoration: underline;
+    text-decoration-color: rgb(233, 226, 214);
+    text-underline-offset: 0.5vh;
+}
+
+
+.footer-contact span {
+    font-weight: bold;
+    color: black;
+}
+
+.footer-contact hr {
+    border: none;
+    border-top: 1px solid #eee7de;
+    margin: 5px 0;
+    width: 100%;
+}
+.footer-wrapper {
+    position: relative;
+}
+
+.footer-flower {
+    position: absolute;
+    right: 10vh;
+    bottom: 0;
+    width: 15vh; /* Можно увеличить/уменьшить при необходимости */
+    transform: translate(170%, 0%); /* Точная подгонка к футеру */
+    z-index: 2;
+}
+.map{
+	width: 600px;
+	height: 400px;
+  }
+  html, body {
+    height: 89.6%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-container {
+    flex: 1; /* Растягиваем контент, чтобы футер всегда был внизу */
+}
+
+.footer-wrapper {
+    justify-content: center;
+    align-items: center;
+    margin-top: auto; /* Прижимает футер к низу */
+}
+
+footer {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

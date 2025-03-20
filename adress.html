@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReRe</title>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<27909866-2543-4aff-83a5-816f718d12e7>" type="text/javascript"></script>
     <link rel="stylesheet" href="assets/css/adress.css">
 </head>
 <body>
@@ -14,39 +15,39 @@
                 <p>Recycle. Reuse</p>
             </div>
             <div class="contact-info">
-                <p>Наш адрес: улица Ефимова, 1/4, Санкт-Петербург. Вход с улицы</p>
-                <p>Часы работы: ПН-ПТ 11:00 - 19:30</p>
-                <p>СБ-ВС 12:00 - 20:00</p>
-                <p>Тел.: +7 (921)-793-46-03</p>
+                <p><span>Наш адрес:</span> улица Ефимова, 1/4,<br> Санкт-Петербург. Вход с улицы <br> <span>Часы работы:</span> ПН-ПТ 11:00 - 19:30<br> СБ-ВС 12:00 - 20:00<br><span> Тел.:</span> +7 (921)-793-46-03</p>
             </div>
         </div>
     </header>
-<!DOCTYPE html>
 
 <body>
-   
-        <h1>Наш адрес</h1>
-    
-
     <div class="grid-container">
         <div class="image-container">
-            <img src="assets/img/map.jpg" alt="Адрес" style="max-width: 100%; height: auto;">
+            <div id="map1" class="map"></div>
         </div>
+        <div id="border">
         <div class="text-container">
             <h2>Наш адрес:  улица Ефимова, 1/4, Санкт-Петербург. Вход с улицы</h2>
             <p>Часы работы: ПН-ПТ   11:00 - 19:30
                 СБ-ВС    12:00 - 20:00</p>
         </div>
     </div>
+    </div>
 
-    <footer>
-        <div class="footer-content"> 
-            <p class="footer-logo">ReRe</p> 
-            <p class="footer-address">Наш адрес: улица Ефимова, 1/4, Санкт-Петербург. Вход с улицы</p>
-            <p>Часы работы: ПН-ПТ 11:00 - 19:30</p>
-            <p>СБ-ВС 12:00 - 20:00</p>
-            <p>Тел.: +7 (921)-793-46-03</p> 
-        </div>
-    </footer>
+    <div class="footer-wrapper">
+        <footer>
+            <div class="footer-left">
+                <p class="footer-logo">ReRe</p>
+                <p class="footer-copyright">©ReRe 2024</p>
+            </div>
+            <div class="footer-contact">
+            <p><span>Наш адрес:</span> улица Ефимова, 1/4,<br> Санкт-Петербург. Вход с улицы <br> <span>Часы работы:</span> ПН-ПТ 11:00 - 19:30<br> СБ-ВС 12:00 - 20:00<br><span> Тел.:</span> +7 (921)-793-46-03</p>
+            </div>
+            <img src="assets/img/yellowFlower.png" alt="Цветок" class="footer-flower">
+        </footer>
+        
+    </div>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<27909866-2543-4aff-83a5-816f718d12e7>"></script>
+    <script src="script.js"></script>
 </body>
 </html>
